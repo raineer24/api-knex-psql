@@ -2,7 +2,7 @@
   "name": "api-psql-knex",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server/index.js",
   "scripts": {
     "test": "he he ha ha",
     "db:migrate": "npx knex migrate:latest",
