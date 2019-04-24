@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "he he ha ha",
+    "db:migrate": "npx knex migrate:latest",
+    "db:seed": "npx knex seed:run"
   },
   "author": "",
   "license": "ISC",
