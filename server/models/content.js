@@ -3,6 +3,8 @@ const bcrypt = require("bcrypt");
 const createGuts = require("../helpers/model-guts");
 
 const name = "Postcontent";
+console.log(name);
+
 const tableName = "postcontent";
 
 const selectableProps = ["title", "content"];

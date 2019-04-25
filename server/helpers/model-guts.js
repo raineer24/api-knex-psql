@@ -25,7 +25,7 @@ module.exports = ({
     knex
       .select(selectableProps)
       .from(tableName)
-      .timeout(1000);
+      .timeout(timeout);
 
   const findById = id =>
     knex
