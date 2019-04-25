@@ -10,7 +10,7 @@
 
 module.exports = ({
   knex = {},
-  name = name,
+  name = "name",
   tableName = "tablename",
   selectableProps = [],
   timeout = 1000
@@ -23,7 +23,7 @@ module.exports = ({
 
   const findAll = () =>
     knex
-      .select()
+      .select(selectableProps)
       .from(tableName)
       .timeout(1000);
 
