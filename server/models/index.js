@@ -16,6 +16,7 @@ const getModelFiles = dir =>
 // `const { MyModel } = require('./models')` where there is a model named
 // `MyModel` present in the exported object of gathered models.
 const files = getModelFiles(__dirname);
+console.log(files);
 
 const models = files.reduce((modelsObj, filename) => {
   const initModel = require(filename);
@@ -25,5 +26,7 @@ const models = files.reduce((modelsObj, filename) => {
 
   return modelsObj;
 }, {});
+
+console.log(models);
 
 module.exports = models;

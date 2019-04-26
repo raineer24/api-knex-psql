@@ -4,16 +4,19 @@
   "description": "",
   "main": "server/index.js",
   "scripts": {
+    "start": "./server/start.js",
     "test": "he he ha ha",
     "db:migrate": "npx knex migrate:latest",
     "db:seed": "npx knex seed:run"
+  },
+  "engines": {
+    "node": ">=8.9.4"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^1.0.3",
-    "body-parser": "^1.18.3",
-    "express": "^4.12.3",
+    "express": "^4.16.3",
     "fs": "0.0.1-security",
     "knex": "^0.16.5",
     "path": "^0.12.7",

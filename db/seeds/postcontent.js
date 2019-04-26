@@ -1,8 +1,8 @@
 "use strict";
-const { Postcontent } = require("../../server/models");
+const { postcontent } = require("../../server/models");
 
 exports.seed = (knex, Promise) =>
-  knex(Postcontent.tableName)
+  knex(postcontent.tableName)
     .del()
     .then(() => [
       {

@@ -3,11 +3,11 @@ const bcrypt = require("bcrypt");
 const createGuts = require("../helpers/model-guts");
 
 const name = "Postcontent";
-console.log(name);
 
 const tableName = "postcontent";
 
 const selectableProps = ["title", "content"];
+console.log(selectableProps);
 
 module.exports = knex => {
   const guts = createGuts([knex, name, tableName, selectableProps]);
